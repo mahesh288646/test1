@@ -19,4 +19,4 @@ jobs:
     uses: ./.github/workflows/reusable.yml
     name: Get Unity Version from UPM package
     with:
-      username: windows
+      image_name: windows
