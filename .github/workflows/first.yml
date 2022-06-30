@@ -19,4 +19,4 @@ jobs:
     uses: ./.github/workflows/reusable-healthcheck.yaml
     name: Get Unity Version from UPM package
     with:
-      image_name: windows
+      url: https://www.google.com
