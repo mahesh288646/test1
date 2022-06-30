@@ -10,5 +10,9 @@ on:
 jobs:
   example_job:
     name: Pass input and secrets to my-action
-    with:
-      username: ${{ inputs.username }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/workflows/my-action
+        with:
+          username: ${{ inputs.username }}
+          token: ${{ secrets.token }}
