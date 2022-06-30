@@ -9,7 +9,6 @@ on:
 
 jobs:
   example_job:
-    uses: ./.github/workflows/my-action
     name: Pass input and secrets to my-action
     with:
       username: ${{ inputs.username }}
