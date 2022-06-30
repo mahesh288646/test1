@@ -1,4 +1,4 @@
-import os,requests
-
-x = requests.get('https://w3schools.com/python/demopage.htm')
+import os,requests,sys
+url = str(sys.argv)
+x = requests.get(url)
 print(x.text)
