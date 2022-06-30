@@ -20,4 +20,4 @@ jobs:
         with:
           python-version: 3.9
       - name: Run the python..
-        run: python healthcheck.py
+        run: python healthcheck.py ${{ inputs.url }}
